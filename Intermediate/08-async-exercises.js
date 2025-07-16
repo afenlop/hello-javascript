@@ -1,10 +1,10 @@
-// /*
-// Clase 45 - Asincronía
-// Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=14558
-// */
+/*
+Clase 45 - Asincronía
+Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=14558
+*/
 
-// // 1. Crea una función para saludar que reciba un nombre y un callback. 
-// //    El callback debe ejecutarse después de 2 segundos y mostrar en consola "Hola, [nombre]".
+// 1. Crea una función para saludar que reciba un nombre y un callback. 
+//    El callback debe ejecutarse después de 2 segundos y mostrar en consola "Hola, [nombre]".
 
 // function saluda (nombre,callback){
 //     setTimeout(()=>callback(nombre),2000)
@@ -16,8 +16,8 @@
 
 // saluda("Adrian",imprimirSaludo)
 
-// // 2. Crea tres funciones task1(callback), task2(callback) y task3(callback). 
-// //    Cada función debe tardar 1 segundo en ejecutarse y luego llamar al callback.
+// 2. Crea tres funciones task1(callback), task2(callback) y task3(callback). 
+//    Cada función debe tardar 1 segundo en ejecutarse y luego llamar al callback.
 
 // function task1(callback){
 //     setTimeout(() => {
@@ -37,9 +37,10 @@
 // }
 
 // task1(()=>task2(()=>task3(()=>console.log("Fin Ej2"))))
-// // 3. Crea una función para verificar un número que retorne una Promesa. 
-// //    Si el número es par, la promesa se resuelve con el mensaje "Número par". 
-// //    Si el número es impar, la promesa se rechaza con el mensaje "Número impar".
+
+// 3. Crea una función para verificar un número que retorne una Promesa. 
+//    Si el número es par, la promesa se resuelve con el mensaje "Número par". 
+//    Si el número es impar, la promesa se rechaza con el mensaje "Número impar".
 
 // function esPar(num){
 //     if(num%2==0){
@@ -62,10 +63,10 @@
 
 // esPar(5).then().catch()
 
-// // 4. Crea tres funciones que devuelvan promesas:
-// //    firstTask(): tarda 1s y muestra "Primera tarea completada".
-// //    secondTask(): tarda 2s y muestra "Segunda tarea completada".
-// //    thirdTask(): tarda 1.5s y muestra "Tercera tarea completada".
+// 4. Crea tres funciones que devuelvan promesas:
+//    firstTask(): tarda 1s y muestra "Primera tarea completada".
+//    secondTask(): tarda 2s y muestra "Segunda tarea completada".
+//    thirdTask(): tarda 1.5s y muestra "Tercera tarea completada".
 
 // function firstTask(){
 //     return new Promise(resolve=>{
